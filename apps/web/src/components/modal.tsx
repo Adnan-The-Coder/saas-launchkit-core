@@ -44,7 +44,7 @@ export function Modal({
         // Close on backdrop click (click on <dialog> itself, not its children)
         if (e.target === e.currentTarget) onClose();
       }}
-      className="backdrop:bg-black/50 backdrop:backdrop-blur-sm rounded-2xl shadow-2xl border-0 p-0 w-full max-w-md"
+      className="fixed inset-0 m-auto w-full max-w-md backdrop:bg-black/50 backdrop:backdrop-blur-sm rounded-2xl shadow-2xl border-0 p-0"
     >
       <div className="p-8">{children}</div>
     </dialog>
