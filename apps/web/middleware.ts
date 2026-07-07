@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 
 const SESSION_COOKIE = "session";
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const session = request.cookies.get(SESSION_COOKIE);
 
   if (request.nextUrl.pathname.startsWith("/dashboard")) {
